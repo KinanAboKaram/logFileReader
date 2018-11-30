@@ -1,0 +1,70 @@
+
+asfasfasf
+asfas
+fa
+sfasf
+
+log.(
+{
+	"Name": "json1",
+	"Author": "App Shah",
+	"Company List": [
+					"Compnay": "eBay",
+					"Compnay": "Paypal",
+					"Compnay": "Google"
+					]})
+
+{
+    "glossary": {
+        "title": "example glossary",
+		"GlossDiv": {
+            "title": "S",
+			"GlossList": {
+                "GlossEntry": {
+                    "ID": "SGML",
+					"SortAs": "SGML",
+					"GlossTerm": "Standard Generalized Markup Language",
+					"Acronym": "SGML",
+					"Abbrev": "ISO 8879:1986",
+					"GlossDef": {
+                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
+						"GlossSeeAlso": ["GML", "XML"]
+                    },
+					"GlossSee": "markup"
+                }
+            }
+        }
+    }
+}
+{
+  "glossqqary" : {
+    "titwwle" : "example glossary",
+    "GalossDiv" : {
+      "GloccssList" : {
+        "GlossEntry" : {
+          "GlvvossTerm" : "Standard Generalized Markup Language",
+          "GlossSee" : "markup",
+          "SorjhtAs" : "SGML",
+          "GlossDef" : {
+            "para" : "A meta-markup language, used to create markup languages such as DocBook.",
+            "GlossSeeAlso" : [ "GML", "XML" ]
+          },
+          "IwD" : "SGML",
+          "Acrornym" : "SGML",
+          "Abbyrev" : "ISO 8879:1986"
+        }
+      },
+      "tivtle" : "S"
+    }
+  }
+}
+
+
+asfsSDDDDDFDSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+SDFSDFSDFSDFSDF
+
+sadasdad asd
+
+
+
+ sss
