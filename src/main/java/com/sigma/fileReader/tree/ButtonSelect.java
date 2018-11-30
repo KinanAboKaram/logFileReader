@@ -15,8 +15,6 @@ import javax.swing.JTextArea;
 import javax.swing.JTree;
 import javax.swing.tree.DefaultTreeModel;
 
-import org.codehaus.jackson.map.ObjectMapper;
-
 public class ButtonSelect extends JFrame {
 
 	/**
@@ -44,8 +42,6 @@ public class ButtonSelect extends JFrame {
 	int endIndexOfBracket = 0;
 	int bracketCounter = 0;
 	int characterNum = 0;
-
-	InitialiseJTree initialiseJTree = new InitialiseJTree();
 
 	private void RunButton() {
 		Stack<Integer> fint = new Stack<>();
@@ -79,30 +75,27 @@ public class ButtonSelect extends JFrame {
 							endIndexOfBracket = characterNum;
 							lint.push(endIndexOfBracket);
 
-							 jsonInFile = fileContent.substring(fint.pop(), lint.pop());
+							jsonInFile = fileContent.substring(fint.pop(), lint.pop());
 							 if (bracketCounter==0) {
-								
 								 boolean ifValid = JsonUtils.isJSONValid(jsonInFile);
+								
 								 if (ifValid) {
 									 jsonNum++;
 									 
 //								System.out.println("+++++++++++++++++++++++++++ jsonNumber: " + jsonNum);
 //								System.out.println(jsonInFile);
-									ObjectMapper mm = new ObjectMapper();
-									String fixdJson = mm.writerWithDefaultPrettyPrinter().writeValueAsString(jsonInFile);
-									System.out.println("1 "+ jsonInFile);
-									System.out.println("2 "+fixdJson);
-									jsonStringList.add(fixdJson);
+									 System.out.println("------------------------------");
+									 jsonStringList.add(jsonInFile);
 								 }
 							}
 						}
 					}
 //					System.out.println(" is empty Tree Map ??? : " + jsonStringList.isEmpty());
 					JsonUtils.updateModel(jsonStringList, tree);
-			
+//					JsonUtils.addRoot( jsonStringList, tree);
 					textArea.setText(fileContent); // set the text on the screen
 
-					highLightAndsCroll.highLightAndsCrollToPosition(buttonfC, tree, textArea, fileContent);
+					highLightAndsCroll.highLightAndsCrollToPosition( tree, textArea, fileContent);
 
 					fChooser.getSelectedFile().exists();
 				} catch (OutOfMemoryError oOfM) {

@@ -61,16 +61,28 @@ public final class JsonUtils {
 	public static DefaultMutableTreeNode addRoot(String rootName, ArrayList<String> jsonStringList) {
 
 		DefaultMutableTreeNode rootNode = new DefaultMutableTreeNode(rootName);
+<<<<<<< HEAD
 
 		for (int i = 0; i < jsonStringList.size(); i++) {
+=======
+		for (int i = 0; i < jsonStringList.size(); i++) {
+
+>>>>>>> first Commit
 			try {
 				ObjectMapper mapper = new ObjectMapper();
 				parser.parse(jsonStringList.get(i));
 
+<<<<<<< HEAD
 				JSONObject jObject = new JSONObject(jsonStringList.get(i));
 
 				JsonNode rootJsonNode = mapper.readTree(jObject.toString());
 
+=======
+				System.out.println("--------------------------------------------------------------------------");
+				System.out.println("num: "+i+" json "+jsonStringList.get(i));
+				JSONObject jObject = new JSONObject(jsonStringList.get(i));
+				JsonNode rootJsonNode = mapper.readTree(jObject.toString());
+>>>>>>> first Commit
 				rootNode.add(buildTree(jsonStringList.get(i), rootJsonNode));
 
 			} catch (JSONException e) {
@@ -94,10 +106,17 @@ public final class JsonUtils {
 
 		Iterator<Entry<String, JsonNode>> iterator = jsonNode.getFields();
 		ObjectMapper mm = new ObjectMapper();
+<<<<<<< HEAD
 //		String fixdJson = mm.writerWithDefaultPrettyPrinter().writeValueAsString(jsonNode);
 ////		System.out.println("-------------------------------------------------------------------");
 ////		System.out.println(fixdJson);
 ////		System.out.println("------------------------------------------------------------------");
+=======
+		String fixdJson = mm.writerWithDefaultPrettyPrinter().writeValueAsString(jsonNode);
+//		System.out.println("-------------------------------------------------------------------");
+//		System.out.println(fixdJson);
+//		System.out.println("------------------------------------------------------------------");
+>>>>>>> first Commit
 		while (iterator.hasNext()) {
 			Entry<String, JsonNode> entry = iterator.next();
 

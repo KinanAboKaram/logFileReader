@@ -3,7 +3,11 @@ asfasfasf
 asfas
 fa
 sfasf
+<<<<<<< HEAD
 
+=======
+{
+>>>>>>> first Commit
 log.(
 {
 	"Name": "json1",
@@ -13,6 +17,10 @@ log.(
 					"Compnay": "Paypal",
 					"Compnay": "Google"
 					]})
+<<<<<<< HEAD
+=======
+					}
+>>>>>>> first Commit
 
 {
     "glossary": {
@@ -65,6 +73,23 @@ SDFSDFSDFSDFSDF
 
 sadasdad asd
 
+<<<<<<< HEAD
 
 
+=======
+ { "GlossEntry" : {
+          "GlvvossTerm" : "Standard Generalized Markup Language",
+          "GlossSee" : "markup",
+          "SorjhtAs" : "SGML",
+          "GlossDef" : {
+            "para" : "A meta-markup language, used to create markup languages such as DocBook.",
+            "GlossSeeAlso" : [ "GML", "XML" ]
+          },
+          "IwD" : "SGML",
+          "Acrornym" : "SGML",
+          "Abbyrev" : "ISO 8879:1986",
+          "tivtle" : "S"
+        }
+}
+>>>>>>> first Commit
  sss
